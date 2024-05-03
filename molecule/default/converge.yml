@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  diff: true
+  # become: true
+  tasks:
+    - name: Include molecule
+      ansible.builtin.include_role:
+        name: gustavoav.molecule
